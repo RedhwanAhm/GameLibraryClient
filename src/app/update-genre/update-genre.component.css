@@ -1,0 +1,32 @@
+mat-card {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+mat-card-title {
+    margin-bottom: 10px;
+
+}
+
+mat-card-actions {
+    margin-bottom: 20px;
+}
+
+  .update-genre-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+  }
+  

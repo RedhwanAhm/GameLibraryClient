@@ -1,0 +1,9 @@
+<div class="game-list">
+  <h2 class="game-list-title">Game List</h2>
+  <div class="game-list-container">
+    <div *ngFor="let game of games" class="game-card mat-card">
+      <h3 class="game-title mat-card-title">{{ game.title }}</h3>
+      <p class="game-genre mat-card-subtitle">Genre: {{ game.genreID }}</p>
+    </div>
+  </div>
+</div>

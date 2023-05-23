@@ -1,0 +1,23 @@
+<h2>Create New Game</h2>
+
+<div>
+  <label for="title">Title:</label>
+  <br>
+  <input type="text" id="title" [(ngModel)]="title" required>
+  <br>
+  <br>
+</div>
+
+<div>
+  <label for="genre">Genre:</label>
+  <br>
+  <select id="genre" [(ngModel)]="selectedGenreId" required>
+    <option value="" disabled selected>Select a genre</option>
+    <option *ngFor="let genre of genres" [value]="genre.id">{{ genre.name }}</option>
+  </select>
+  <br>
+  <br>
+
+</div>
+
+<button (click)="createGame()">Create Game</button>

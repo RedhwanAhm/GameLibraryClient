@@ -1,0 +1,9 @@
+<div>
+  <h2 mat-title>Games by Genre: {{ genreName }}</h2>
+  <mat-nav-list>
+    <mat-list-item *ngFor="let game of games">
+      {{ game.title }}
+    </mat-list-item>
+    <button (click)="goBack()">Go back to genres</button>
+  </mat-nav-list>
+</div>
